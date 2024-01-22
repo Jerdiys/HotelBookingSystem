@@ -1,0 +1,31 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success</title>
+    <link rel="stylesheet" type= "text/css" href="{% static "C:/Users/seanj/Desktop/Hotel_Project/Hotel/static/style.css" %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navleft">
+            <a href="/" class="lakeside">LakeSide Hotel</a>
+            <a href="/rooms" class="navlinks">Browse all Rooms</a>
+        </div>
+        <div class="navright">
+            <a href="/search" class="navlinks">Find my Booking</a>
+            <a href="/register" class="navlinks">Account</a>
+        </div>
+    </nav>
+
+    <section class="register">
+        <h3>Booking Succesfull. Your Booking code is {{ booking_code }}</h3>
+        <h5>Return to <a href="/">Home</a> page</h5>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LakeSide Hotel</p>
+    </footer>    
+</body>
+</html>

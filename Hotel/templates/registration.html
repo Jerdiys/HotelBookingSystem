@@ -1,0 +1,37 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type= "text/css" href="{% static "C:/Users/seanj/Desktop/Hotel_Project/Hotel/static/style.css" %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navleft">
+            <a href="/" class="lakeside">LakeSide Hotel</a>
+            <a href="/rooms" class="navlinks">Browse all Rooms</a>
+        </div>
+        <div class="navright">
+            <a href="/search" class="navlinks">Find my Booking</a>
+            <a href="/register" class="navlinks">Account</a>
+        </div>
+    </nav>
+
+    <section class="register">
+        <h1>Registration Form</h1>
+        <hr>
+        <form action="{% url "Registration" %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Register">
+        </form>
+        <p style="text-align: center;">If you already have and Account please <a href="/login">Login</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LakeSide Hotel</p>
+    </footer>    
+</body>
+</html>

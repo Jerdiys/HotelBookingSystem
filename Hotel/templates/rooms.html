@@ -1,0 +1,42 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Rooms</title>
+    <link rel="stylesheet" type= "text/css" href="{% static "C:/Users/seanj/Desktop/Hotel_Project/Hotel/static/style.css" %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navleft">
+            <a href="/" class="lakeside">LakeSide Hotel</a>
+            <a href="/rooms" class="navlinks">Browse all Rooms</a>
+        </div>
+        <div class="navright">
+            <a href="/search" class="navlinks">Find my Booking</a>
+            <a href="/register" class="navlinks">Account</a>
+        </div>
+    </nav>
+
+    <h1>LIST OF ROOMS</h1>
+    <section class="listing">
+        <ul>
+            {% for room in rooms %}
+                <span>
+                    <h3>{{room.roomtype}}</h3>
+                </span>
+                <img src="{{room.roomphoto.url}}" alt="{{room.roomphoto}}" width="300" height="150" /> 
+                <p>NGN{{room.roomprice}}</p>
+                <a href="/login" class="bookbutton">BOOK</a>
+                <hr>          
+            {% endfor %}
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 LakeSide Hotel</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15pt;
+    background-color: whitesmoke;
+}
+
+.navleft a{
+    padding-left: 25pt;
+}
+
+.navright a{
+    padding-right: 25pt;
+}
+
+.lakeside{
+    color: #ba7297;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.navlinks{
+    text-decoration: none;
+    color: gray;
+}
+
+.welcome{
+    background-color: dimgray;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    background-image: url('images/services-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    background-blend-mode: multiply;
+
+    text-align: center;
+    color: white;
+}
+
+.welcome span{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.welcome h3{
+    font-size: larger;
+    margin-top: 0pt;
+}
+
+.available{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 70pt;
+    padding-right: 70pt;
+}
+
+
+.pride{
+    margin: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: gray;
+    text-shadow: 2px 2px black;
+}
+
+.pride span{
+    font-size: xx-large;
+    font-weight:600;
+}
+
+.pride h3{
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.ourservices{
+    text-align: center;
+    font-size: xx-large;
+    color: gray;
+    background-color: dimgray;
+    background-image: url('/Hotel/static/images/services4.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size:cover ;
+    background-blend-mode:multiply;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-bottom: 40px;
+}
+.hr{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.SERVICES{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content: space-between;
+}
+
+.service{
+    width: 30%;
+    border: 1pt solid gray;
+    border-radius: 3pt;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.service p{
+    color: gray;
+
+}
+
+.service h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ba7297;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    background-color: #212529;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.register{
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 60vh;
+    margin-right: 60vh;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.register h1{
+    font-size: 40px;
+    text-align: center;
+    color: #ba7297;
+    text-shadow: 1px 1px black;
+    margin-bottom: 3px;
+
+}
+
+.register form{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.register form input{
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+}
+.listing{
+    margin-bottom: 100px;
+}
+
+.bookbutton{
+    padding: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ba7297;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
