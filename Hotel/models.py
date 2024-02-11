@@ -37,5 +37,3 @@ class RoomBooking(models.Model):
         if not self.booking_code:
             self.booking_code = generatebookingcode()
         super(RoomBooking, self).save(*args, **kwargs)
-    
-

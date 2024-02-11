@@ -85,7 +85,7 @@ body{
     font-size: xx-large;
     color: gray;
     background-color: dimgray;
-    background-image: url('/Hotel/static/images/services4.jpg');
+    background-image: url('images/services4.jpg');
     background-repeat: no-repeat;
     background-position: 0px;
     background-size:cover ;

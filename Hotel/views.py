@@ -6,7 +6,6 @@ from django.http import HttpResponse
 from .models import Room, RoomBooking
 from .forms import  CustomUserCreationForm, CustomAuthenticationForm, RoomBookingForm, BookingSearch
 
-
 # Create your views here.
 def Home(request):
     template = loader.get_template('index.html')
